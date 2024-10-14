@@ -1,0 +1,32 @@
+$TTL 86400
+@   IN  SOA darthvader.starwars.lan. root.starwars.lan. (
+            2023100701  ; Serial
+            604800      ; Refresh
+            86400       ; Retry
+            2419200     ; Expire
+            604800 )    ; Negative Cache TTL (1 semana)
+
+; Servidor de nomes (NS)
+@   IN  NS  darthsidious.starwars.lan.
+
+; Rexistros A (Enderezos IP)
+darthvader   IN  A   192.168.20.10
+skywalker    IN  A   192.168.20.101
+skywalker    IN  A   192.168.20.111
+luke         IN  A   192.168.20.22
+darthsidious IN  A   192.168.20.11
+yoda         IN  A   192.168.20.24
+yoda         IN  A   192.168.20.25
+c3p0         IN  A   192.168.20.26
+
+; Rexistro CNAME
+palpatine    IN  CNAME darthsidious
+
+; Rexistro MX (Correo)
+@   IN  MX  10 c3p0.starwars.lan.
+
+; Rexistro TXT
+@   IN  TXT "Que a forza te acompanhe"
+
+; Rexistro TXT para lenda.starwars.lan
+lenda   IN  TXT "Que a forza te acompañe"

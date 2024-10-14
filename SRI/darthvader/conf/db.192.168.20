@@ -1,0 +1,20 @@
+$TTL 86400
+@   IN  SOA  darthvader.starwars.lan. root.starwars.lan. (
+            2023100701  ; Serial (data actual en formato YYYYMMDDxx)
+            604800      ; Refresh (1 semana)
+            86400       ; Retry (1 día)
+            2419200     ; Expire (4 semanas)
+            604800 )    ; Negative Cache TTL (1 semana)
+
+; Servidor de nomes para a zona inversa
+@   IN  NS  darthsidious.starwars.lan.
+
+; Rexistros PTR (mapeo de IPs a nomes)
+10   IN  PTR  darthvader.starwars.lan.
+11   IN  PTR  darthsidious.starwars.lan.
+22   IN  PTR  luke.starwars.lan.
+24   IN  PTR  yoda.starwars.lan.
+25   IN  PTR  yoda.starwars.lan.
+26   IN  PTR  c3p0.starwars.lan.
+101  IN  PTR  skywalker.starwars.lan.
+111  IN  PTR  skywalker.starwars.lan.
